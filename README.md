@@ -5,3 +5,5 @@ It collects logs from multiple sources, analyses user behaviour, identifies susp
 The architecture includes an AI Model, MCP Server, Log Analysis Engine, Automated Response Algorithm, and a monitoring Dashboard. 
 Together, they provide a complete end-to-end detection workflow with human oversight. The system improves security visibility, reduces response time, 
 and strengthens protection against modern threats through intelligent behavioural analysis and automated mitigation.
+
+Video link : https://drive.google.com/file/d/1TgROU8OJVgGhVIkAMmYVcRW05EU2AJea/view?usp=sharing
