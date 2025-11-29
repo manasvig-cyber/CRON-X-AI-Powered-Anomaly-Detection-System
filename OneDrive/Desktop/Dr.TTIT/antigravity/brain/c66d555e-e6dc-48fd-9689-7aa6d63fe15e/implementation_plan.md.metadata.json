@@ -1,0 +1,5 @@
+{
+  "artifactType": "ARTIFACT_TYPE_IMPLEMENTATION_PLAN",
+  "summary": "Implementation plan for AnomWatch. Covers Backend (FastAPI) and Frontend (React/Vite) setup, mock data generation, and key features like Session Replay and Chatbot.",
+  "updatedAt": "2025-11-28T12:27:02.439749Z"
+}

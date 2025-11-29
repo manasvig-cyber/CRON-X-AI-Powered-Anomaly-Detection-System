@@ -1,0 +1,23 @@
+# Implementation Plan - Dummy Data for Demo
+
+The goal is to ensure the application displays data during a demo, even if the backend is unavailable or empty. I will inject dummy data into the frontend components.
+
+## Proposed Changes
+
+### Frontend
+
+#### [MODIFY] [Sessions.tsx](file:///c:/Users/deepu/.gemini/antigravity/scratch/anomwatch/frontend/src/pages/Sessions.tsx)
+- Define `DUMMY_SESSIONS` array with mock session data.
+- Update [fetchSessions](file:///c:/Users/deepu/.gemini/antigravity/scratch/anomwatch/frontend/src/pages/Sessions.tsx#21-31) to use `DUMMY_SESSIONS` if the API call fails.
+
+#### [MODIFY] [Dashboard.tsx](file:///c:/Users/deepu/.gemini/antigravity/scratch/anomwatch/frontend/src/pages/Dashboard.tsx)
+- Define `DUMMY_ALERTS` array with mock alert data.
+- Update [fetchAlerts](file:///c:/Users/deepu/.gemini/antigravity/scratch/anomwatch/frontend/src/pages/Dashboard.tsx#21-32) to use `DUMMY_ALERTS` if the API call fails.
+
+## Verification Plan
+
+### Manual Verification
+- Run the frontend.
+- Verify that [Sessions](file:///c:/Users/deepu/.gemini/antigravity/scratch/anomwatch/frontend/src/pages/Sessions.tsx#16-108) page shows the dummy sessions.
+- Verify that [Dashboard](file:///c:/Users/deepu/.gemini/antigravity/scratch/anomwatch/frontend/src/pages/Dashboard.tsx#12-171) page shows the dummy alerts.
+- (Optional) Stop the backend to ensure the fallback works.

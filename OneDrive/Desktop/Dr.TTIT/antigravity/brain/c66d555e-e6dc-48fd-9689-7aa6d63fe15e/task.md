@@ -1,0 +1,30 @@
+# AnomWatch SOC Dashboard - Task List
+
+- [x] **Project Initialization**
+    - [x] Create project structure (frontend/backend)
+    - [x] Initialize git (optional but good practice)
+    - [x] Create `implementation_plan.md`
+- [x] **Backend Implementation (FastAPI)**
+    - [x] Setup FastAPI with WebSockets
+    - [x] Implement Mock Data Generator (Alerts, Events, Users)
+    - [x] Implement REST Endpoints (Alerts, Users, Chat, Playbooks)
+    - [x] Implement WebSocket Broadcaster
+    - [x] Implement Chatbot Mock / Stub
+- [x] **Frontend Implementation (React + Vite)**
+    - [x] Initialize Vite project with TypeScript & Tailwind CSS
+    - [x] Setup Routing and Layout (Sidebar, Header)
+    - [x] Implement WebSocket Context / Hook
+    - [x] **Dashboard Views**
+        - [x] Live Alerts Strip & Feed
+        - [x] Alert Detail View (Split Pane)
+        - [x] Session Replay Component (Canvas/SVG)
+        - [x] Chatbot Interface (Antigravity)
+        - [x] User & IP Context Cards
+    - [x] **Interactions**
+        - [x] Acknowledge / Override Actions
+        - [x] Playbook Runner
+- [x] **Verification & Polish**
+    - [x] Verify WebSocket Real-time updates
+    - [x] Verify Chatbot Interaction
+    - [x] Verify Session Replay visualization
+    - [x] Final UI Polish (Dark mode, animations)

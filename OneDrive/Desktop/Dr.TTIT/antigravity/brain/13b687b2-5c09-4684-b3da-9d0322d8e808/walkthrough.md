@@ -1,0 +1,46 @@
+# Walkthrough - Dummy Data Injection
+
+I have updated the application to use dummy data when the backend is unavailable. This is useful for demos.
+
+## Changes
+
+### Frontend
+
+#### [Sessions.tsx](file:///c:/Users/deepu/.gemini/antigravity/scratch/anomwatch/frontend/src/pages/Sessions.tsx)
+- Added `DUMMY_SESSIONS` array.
+- Updated `fetchSessions` to use `DUMMY_SESSIONS` on error.
+
+#### [Dashboard.tsx](file:///c:/Users/deepu/.gemini/antigravity/scratch/anomwatch/frontend/src/pages/Dashboard.tsx)
+- Added `DUMMY_ALERTS` array.
+- Updated `fetchAlerts` to use `DUMMY_ALERTS` on error.
+
+#### [Chatbot.tsx](file:///c:/Users/deepu/.gemini/antigravity/scratch/anomwatch/frontend/src/components/Chatbot.tsx)
+- Added intelligent dummy responses based on query keywords.
+- Chatbot now provides contextual answers for queries about alerts, sessions, users, and anomalies.
+
+#### [ChatbotPage.tsx](file:///c:/Users/deepu/.gemini/antigravity/scratch/anomwatch/frontend/src/pages/ChatbotPage.tsx)
+- Added intelligent dummy responses based on query keywords.
+- Updated welcome message to use realistic user names.
+
+## Verification Results
+
+### Manual Verification
+- The code changes include a `try-catch` block where the `catch` block sets the state with dummy data.
+- This ensures that if `axios.get` fails (e.g., backend down), the user still sees data.
+
+### Screenshots
+
+#### Dashboard with Dummy Data
+![Dashboard](C:/Users/deepu/.gemini/antigravity/brain/13b687b2-5c09-4684-b3da-9d0322d8e808/dashboard_realistic_1764354400601.png)
+
+#### Sessions with Dummy Data
+![Sessions](C:/Users/deepu/.gemini/antigravity/brain/13b687b2-5c09-4684-b3da-9d0322d8e808/sessions_realistic_1764354424870.png)
+
+#### Chatbot with Dummy Responses
+![Chatbot Alerts](C:/Users/deepu/.gemini/antigravity/brain/13b687b2-5c09-4684-b3da-9d0322d8e808/chatbot_alerts_response_1764355008593.png)
+
+![Chatbot User Query](C:/Users/deepu/.gemini/antigravity/brain/13b687b2-5c09-4684-b3da-9d0322d8e808/chatbot_user_response_1764355042237.png)
+
+## Next Steps
+- Run the frontend using `npm run dev` (or equivalent).
+- Verify that data appears on the Dashboard and Sessions pages even without the backend running.

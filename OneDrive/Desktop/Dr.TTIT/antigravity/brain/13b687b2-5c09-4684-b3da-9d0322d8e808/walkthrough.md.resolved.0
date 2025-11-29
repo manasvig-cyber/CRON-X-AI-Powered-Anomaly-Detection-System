@@ -1,0 +1,25 @@
+# Walkthrough - Dummy Data Injection
+
+I have updated the application to use dummy data when the backend is unavailable. This is useful for demos.
+
+## Changes
+
+### Frontend
+
+#### [Sessions.tsx](file:///c:/Users/deepu/.gemini/antigravity/scratch/anomwatch/frontend/src/pages/Sessions.tsx)
+- Added `DUMMY_SESSIONS` array.
+- Updated [fetchSessions](file:///c:/Users/deepu/.gemini/antigravity/scratch/anomwatch/frontend/src/pages/Sessions.tsx#48-59) to use `DUMMY_SESSIONS` on error.
+
+#### [Dashboard.tsx](file:///c:/Users/deepu/.gemini/antigravity/scratch/anomwatch/frontend/src/pages/Dashboard.tsx)
+- Added `DUMMY_ALERTS` array.
+- Updated [fetchAlerts](file:///c:/Users/deepu/.gemini/antigravity/scratch/anomwatch/frontend/src/pages/Dashboard.tsx#61-76) to use `DUMMY_ALERTS` on error.
+
+## Verification Results
+
+### Manual Verification
+- The code changes include a `try-catch` block where the `catch` block sets the state with dummy data.
+- This ensures that if `axios.get` fails (e.g., backend down), the user still sees data.
+
+## Next Steps
+- Run the frontend using `npm run dev` (or equivalent).
+- Verify that data appears on the Dashboard and Sessions pages even without the backend running.
