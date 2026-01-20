@@ -1,3 +1,9 @@
+
+# 🤖 CRON-X AI-Powered Anomaly Detection System
+
+## Hackathon Solution: AI-Driven SOC Dashboard
+
+This is a complete **AI-powered anomaly detection system** that identifies suspicious user activities and automatically responds to threats.
 AI-Based Intrusion & Behaviour Anomaly Detection System
 
 This project implements an AI-driven security system designed to detect behavioural anomalies and potential intrusions in real time.
@@ -7,12 +13,6 @@ Together, they provide a complete end-to-end detection workflow with human overs
 and strengthens protection against modern threats through intelligent behavioural analysis and automated mitigation.
 
 Video link : https://drive.google.com/file/d/1TgROU8OJVgGhVIkAMmYVcRW05EU2AJea/view?usp=sharing
-
-# 🤖 CRON-X AI-Powered Anomaly Detection System
-
-## Hackathon Solution: AI-Driven SOC Dashboard
-
-This is a complete **AI-powered anomaly detection system** that identifies suspicious user activities and automatically responds to threats.
 
 ---
 
